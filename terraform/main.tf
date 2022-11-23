@@ -50,7 +50,7 @@ module "import_a4ldev" {
   }
 
   custom_fields = {
-    group = "non-prod"
+    group = "a4l-dev"
   }
   account_customizations_name = "sandbox"
 }
