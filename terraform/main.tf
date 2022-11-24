@@ -12,6 +12,7 @@ module "sandbox" {
 
   account_tags = {
     "Learn Tutorial" = "AFT"
+    "ACCOUNT_TYPE" = "Application"
   }
 
   change_management_parameters = {
