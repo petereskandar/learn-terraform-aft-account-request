@@ -28,20 +28,22 @@ module "sandbox" {
 
 # IMPORT A4LDEV ACCOUNT - 147839711267
 
-module "import_a4ldev" {
+module "import_provisioned-org" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "peterwadid1+a4ldev@gmail.com"
-    AccountName               = "A4L-DEV"
-    ManagedOrganizationalUnit = "Security (ou-kfmq-j4js7sr4)"
-    SSOUserEmail              = "peterwadid1+a4ldev@gmail.com"
+    AccountEmail              = "peterwadid1-org@gmail.com"
+    AccountName               = "provisioned-org"
+    ManagedOrganizationalUnit = "Administrators (ou-kfmq-hs0h7yjq)"
+    SSOUserEmail              = "peterwadid1-org@gmail.com"
     SSOUserFirstName          = "Peter"
     SSOUserLastName           = "Eskandar"
   }
 
   account_tags = {
     "Learn Tutorial" = "AFT"
+    "ACCOUNT_ORG" = "Administrators"
+    "ACCOUNT_TYPE" = "Application"
   }
 
   change_management_parameters = {
