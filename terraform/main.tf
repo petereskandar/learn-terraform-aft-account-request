@@ -52,7 +52,7 @@ module "import_provisioned-org" {
   }
 
   custom_fields = {
-    group = "a4l-dev"
+    group = "Administrators"
   }
   account_customizations_name = "sandbox"
 }
